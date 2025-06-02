@@ -56,9 +56,9 @@ def drove_page_prev():
 
 while True:
     click_chord()
-    sleep(20)
+    sleep(18)
     if status:
         drove_page_next()
     else:
         drove_page_prev()
-    sleep(5)
+    sleep(10)
