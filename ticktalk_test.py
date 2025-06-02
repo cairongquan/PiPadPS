@@ -34,7 +34,7 @@ def drove_page_next():
         sleep(1)
         m.release()
     page += 1
-    if page > 4:
+    if page >= 4:
         status = False
 
 def drove_page_prev():
@@ -51,7 +51,8 @@ def drove_page_prev():
         sleep(1)
         m.release()
     page -= 1
-    if page == 0:
+    if page <= 0:
+        page = 0
         status = True
 
 while True:
